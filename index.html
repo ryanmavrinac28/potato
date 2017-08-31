@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>DDosPackets</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Lato';
+body {
+font-family: 'Anton', sans-serif;
+color: #3d3d3d;
+line-height: 1;
+background-image: url("NoiseMap.gif");
+background-repeat: repeat;
+-webkit-animation: noise 20ms linear infinite;
+animation: noise 20ms linear infinite;
+}
+header {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+position: fixed;
+width: 100vw;
+height: 100vh;
+background-size: cover;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+h1 {
+font-family: 'Anton', sans-serif;
+text-transform: uppercase;
+font-size: 25vmin;
+text-align: center;
+position: relative;
+z-index: 999;
+mix-blend-mode: difference;
+color: #fff;
+text-shadow: 0 -5px 2px rgba(255,51,51,0.2), -5px -5px 2px rgba(255,51,51,0.2), 0 5px 2px rgba(0,255,255,0.2), 5px 5px 2px rgba(0,255,255,0.2);
+position: relative;
+-webkit-animation: 4s out-of-focus infinite;
+animation: 4s out-of-focus infinite;
+}
+a {
+text-decoration: none;
+position: absolute;
+top: 25%;
+right: 0%;
+left: 0%;
+}
+@-webkit-keyframes noise {
+0% {
+background-position: 1000px;
+}
+}
+@keyframes noise {
+0% {
+background-position: 1000px;
+}
+}
+@-webkit-keyframes out-of-focus {
+55% {
+-webkit-filter: blur(0);
+filter: blur(0);
+opacity: 1;
+}
+59% {
+left: 0;
+}
+60% {
+-webkit-filter: blur(2px);
+filter: blur(2px);
+left: -2px;
+}
+61% {
+-webkit-filter: blur(0);
+filter: blur(0);
+left: 2px;
+top: 2px;
+opacity: 0.5;
+}
+62% {
+-webkit-filter: blur(2px);
+filter: blur(2px);
+left: 0;
+top: 0;
+opacity: 1;
+}
+70% {
+-webkit-filter: blur(0);
+filter: blur(0);
+}
+}
+@keyframes out-of-focus {
+55% {
+-webkit-filter: blur(0);
+filter: blur(0);
+opacity: 1;
+}
+59% {
+left: 0;
+}
+60% {
+-webkit-filter: blur(2px);
+filter: blur(2px);
+left: -2px;
+}
+61% {
+-webkit-filter: blur(0);
+filter: blur(0);
+left: 2px;
+top: 2px;
+opacity: 0.5;
+}
+62% {
+-webkit-filter: blur(2px);
+filter: blur(2px);
+left: 0;
+top: 0;
+opacity: 1;
+}
+70% {
+-webkit-filter: blur(0);
+filter: blur(0);
+}
+}
+</style>
+<body>
+<header>
+<a href="https://www.twitter.com/DDosPackets">
+<h1>DDosPackets</h1></a>
+</header>
+<div style="visibility:hidden">
+<audio autoplay loop>
+<source src="Packets.mp3">
+</audio>
+</body>
+</html>
